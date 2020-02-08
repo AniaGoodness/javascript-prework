@@ -18,7 +18,7 @@
     let randomNumber = Math.floor(Math.random() * 3 + 1);
     let argComputerMove = getMoveName(randomNumber);
     let argPlayerMove = getMoveName(playerInput);
-    displayResult(argPlayerMove, argComputerMove);
+    displayResult(argComputerMove, argPlayerMove);
   }
 
   function getMoveName(argMoveId){
@@ -35,7 +35,7 @@
   }
 
   function displayResult(argComputerMove, argPlayerMove){
-    printMessage('Zagrałem ' + argPlayerMove + ', a Ty ' + argComputerMove);
+    printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
     if( argComputerMove == 'kamień' && argPlayerMove == 'papier'
     || argComputerMove == 'papier' && argPlayerMove == 'nożyce'
